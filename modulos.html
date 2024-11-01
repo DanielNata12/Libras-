@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Libras + |  Seus modulos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<nav>
+		<div class="header" id="header" >
+			<button onclick="toggleSidebar()" class="btn_icon_header">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+				  </svg>
+			</button>
+			<div id="logo-header">
+				<a href="index.html"><img width="160px" src="imagens/logo-libras.png" class="img_logo_header" alt="logo libras"></a>
+			</div>
+			<div class="navigatio_header" id="navigatio_header">
+				<button onclick="toggleSidebar()" class="btn_icon_header">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+						<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+					  </svg>
+				</button>
+				<a href="index.html" class="active">Noticias</a>
+				<a href="quiz.html">Quizzes</a>
+				<a href="modulos.html">Aulas</a>
+				<a href="---------.html">não sei</a>
+				<a href="---------.html">indesiso</a>
+			</div>
+		</div>
+		<!-- <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+			<h1>Menu Responsivo - Daniel natanzinho</h1>
+		</div> -->
+	</nav>
+	<div id="area-principal">
+
+		<div id="area-postagens">
+			
+			<!-- abertura postagem -->
+			<div class="postagem">
+				<a href="aulas/alfabeto/alfabeto.html">
+					<h2>Modulo 1 - Alfabeto</h2>
+				</a>
+				<span class="data-postagem">postado 20 março 2022</span>
+				<img width="620px" src="imagens/alfabeto2 - libras.png">
+				<p class="justificado">
+					Bem-vindos ao nosso curso de Libras (Língua Brasileira de Sinais)! Neste primeiro módulo, vamos embarcar em uma jornada emocionante para aprender o alfabeto em Libras de maneira dinâmica e interativa. O alfabeto é a base fundamental para a comunicação em Libras, e entender suas letras é essencial para que você possa formar palavras e se expressar com clareza.</br></br>
+				</p>
+				<a href="">Leia mais</a>
+			</div><!--// fechamento postagem -->
+
+			<!-- abertura postagem -->
+			<div class="postagem">
+				<a href="aulas/números/numeros.html">
+					<h2>Modulo 2 - Número</h2>
+				</a>
+				<span class="data-postagem">postado 10 março 2022</span>
+				<img width="620px" src="imagens/numeros2 - libras.png">
+				<p class="justificado">
+					Bem-vindos ao segundo módulo do nosso curso de Libras! Após a nossa imersão no alfabeto, é hora de avançar e explorar um novo conjunto de sinais: os números. Neste módulo, vamos aprender a contar e a utilizar os números em Libras de forma dinâmica e interativa. </br></br>
+				</p>
+				<a href="">Leia mais</a>
+			</div><!--// fechamento postagem -->
+
+			<!-- abertura postagem -->
+			<div class="postagem">
+				<a href="aulas/comprimentos/comprimentos.html">
+					<h2>Modulo 3 - Comprimentos</h2>
+				</a>
+				<span class="data-postagem">postado 10 março 2022</span>
+				<img width="620px" src="imagens/comprimentos - libras.png">
+				<p class="justificado">
+					Após nossa jornada pelo alfabeto e pelos números, agora vamos nos aprofundar em um novo tema: os comprimentos. Neste módulo, você aprenderá a expressar medidas e dimensões de forma clara e eficaz em Libras. </br></br>
+				</p>
+				<a href="">Leia mais</a>
+			</div><!--// fechamento postagem -->
+
+		</div>
+		<div id="area-lateral">
+			
+
+			<div class="conteudo-lateral">
+				<h3>Novidades recentes</h3>
+				
+				<div class="postagem-lateral">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<a href="">Leia mais</a>
+				</div>
+
+				<div class="postagem-lateral" style="border-bottom: none;">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<a href="">Leia mais</a>
+				</div>
+
+			</div>
+
+			<div class="conteudo-lateral">
+				<h3>Categorias</h3>
+				
+				<a href="">Jogos</a><br>
+				<a href="">Celulares</a><br>
+				<a href="">Informática</a><br>
+				<a href="">Eletrônicos</a><br>
+				<a href="">Jogos</a><br>
+
+			</div>
+
+
+		</div>
+
+		<div id="rodape">
+			Todos os direitos reservados
+		</div>
+
+	</div>
+
+</body>
+<script>
+	var header = document.getElementById('header');
+	var navigatioHeader = document.getElementById('navigatio_header');
+	var content = document.getElementById('content');
+	var showSidebar = false;
+
+	function toggleSidebar()
+	{
+		showSidebar = !showSidebar;
+		if(showSidebar)
+		{
+			navigatioHeader.style.marginLeft = '-10vw';
+			navigatioHeader.style.animationName = 'showSidebar';
+			content.style.filter = 'blur(2px)';
+		}
+		else 
+		{
+			navigatioHeader.style.marginLeft = '-100vw';
+			navigatioHeader.style.animationName = '';
+			content.style.filter = '';
+		}
+	}
+
+	function closeSidebar() 
+	{
+		if(showSidebar)
+		{
+			toggleSidebar();
+		}
+	}
+
+	window.addEventListener('resize', function(event){
+		if(window.innerWidth > 768 && showSidebar)
+		{
+			toggleSidebar()
+		}
+	});
+
+</script>
+</html>

@@ -1,0 +1,71 @@
+body {
+    background-color: #000000;
+  }
+  
+  a {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  nav {
+    
+    display: flex;
+    gap: 30px;
+    padding: 12px;
+    justify-content: center;
+  }
+   
+  .navigation {
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+    white-space: nowrap; /* Faz com que os itens da navegação fiquem em uma linha */
+  }  
+
+  .nav-items a {
+    padding: 3px; /* Adiciona um espaço ao redor dos itens */
+  }
+
+  nav, main {
+    padding: 12px;
+  }
+  
+  img {
+    width: 100%; 
+    border-radius: 12px;
+    margin-bottom: 0px;
+  }
+  
+  main {
+    columns: 2;
+  }
+  
+  /*Estou tentando alocar os (...) ao lado direito na parte de baixo da imagem*/
+
+  .focando-pontinhos {
+    font-size: 20px;
+    color: white;
+    text-align: right;
+  }
+
+  /*rodape da pagina*/
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    background-color: black;
+
+    color: white;
+    font-size: 30px;
+  }
+  
+  footer img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
